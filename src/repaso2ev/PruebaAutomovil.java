@@ -7,7 +7,8 @@ package repaso2ev;
 //Created by Luis Cortes. Date 26-03-2020
 //Modified final 1 by Luis Cortes. Date 28-03-2020
 //Modified final 2 by Luis Cortes. Date 30-03-2020
-//Modified final 3 by Luis Cortes. Date 03-04-2020
+//Modified final 3 by Luis Cortes. Date 01-04-2020
+//Modified final 4 by Luis Cortes. Date 02-04-2020 FINAL
 
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -42,6 +43,7 @@ public class PruebaAutomovil {
 			// deposito, litros en el deposito, y consumo.
 			// Esta cadena mediante el metodo Sting.split la divideremos en pequeños trozos
 			// (tokens) el separador es uno o varios espacios en blanco
+
 			String[] tokens = in.nextLine().split("\\s+");
 
 			// Declaramos las variables y cada una de ellas le damos el valor de cada
@@ -50,9 +52,9 @@ public class PruebaAutomovil {
 			// requieran
 
 			String modelo = tokens[0];
-			double capacidadDeposito = Double.parseDouble(tokens[1]);
-			double combustibleEnDeposito = Double.parseDouble(tokens[2]);
-			double consumo = Double.parseDouble(tokens[3]);
+			float capacidadDeposito = Float.parseFloat(tokens[1]);
+			float combustibleEnDeposito = Float.parseFloat(tokens[2]);
+			float consumo = Float.parseFloat(tokens[3]);
 
 			// introduzco en el TreeMap como clave el valor de modelo, y como valor un nuevo
 			// objeto de la clase Automovil siendo sus parametros los datos obtenidos
@@ -84,7 +86,7 @@ public class PruebaAutomovil {
 			String modelo1 = tokens[1];
 
 			// el tercer trozo son los kilometros que supuestamente se va a desplazar
-			double Kilometros = Double.parseDouble(tokens[2]);
+			float Kilometros = Float.parseFloat(tokens[2]);
 
 			/**
 			 * llamo al metodo de la clase Automovil desplazarse como parametro los Km para
@@ -139,19 +141,14 @@ public class PruebaAutomovil {
 
 	}
 	/**
-	 * 2
 	 * 
-	 * AudiA4 80 23 0.3
-	 * 
-	 * BMW-M2 75 45 0.42
-	 * 
-	 * desplazar AudiA4 5
-	 * 
-	 * desplazar BMW-M2 56
-	 * 
-	 * desplazar AudiA4 13
-	 * 
-	 * fin
+2
+AudiA4 80 23 0.3
+BMW-M2 75 45 0.42
+desplazar AudiA4 5
+desplazar BMW-M2 56
+desplazar AudiA4 13
+fin
 	 * 
 	 * AudiA4 21.50 1.50
 	 * 
@@ -167,23 +164,19 @@ public class PruebaAutomovil {
 	 * 
 	 * 
 	 * 
-	 * 3
-	 * 
-	 * AudiA4 80 18 0.34
-	 * 
-	 * BMW-M2 75 33 0.41
-	 * 
-	 * Ferrari-488Spider 70 50 0.47
-	 * 
-	 * desplazar Ferrari-488Spider 97
-	 * 
-	 * desplazar AudiA4 85
-	 * 
-	 * desplazar Ferrari-488Spider 35
-	 * 
-	 * desplazar AudiA4 50 fin
-	 * 
-	 * Ferrari-488Spider 4.41 45.59
+3
+AudiA4 80 18 0.34
+BMW-M2 75 33 0.41
+Ferrari-488Spider 70 50 0.47
+desplazar Ferrari-488Spider 97
+desplazar AudiA4 85
+desplazar Ferrari-488Spider 35
+desplazar AudiA4 50
+fin
+     
+     * 
+     * 
+     * Ferrari-488Spider 4.41 45.59
 	 * 
 	 * Combustible insuficiente para este desplazamiento
 	 * 
